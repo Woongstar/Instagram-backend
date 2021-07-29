@@ -28,7 +28,7 @@ const resolvers = {
     movie: () => ({ title: "Hello!", year: 2021 }),
   },
   Mutation: {
-    createMovie: (_, { title, year, geb = nre }) =>
+    createMovie: (_, { title, year, genre }) =>
       client.movie.create({
         data: {
           title,
