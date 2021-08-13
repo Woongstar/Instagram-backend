@@ -1,6 +1,5 @@
-import { bcrypt } from "bcrypt";
+import bcrypt from "bcrypt";
 import client from "../../client";
-import { async } from "regenerator-runtime";
 export default {
   Mutation: {
     editProfile: async (
