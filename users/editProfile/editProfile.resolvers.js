@@ -29,7 +29,7 @@ const resolverFn = async (
   } else {
     return {
       ok: false,
-      error: "password updqte failed",
+      error: "password update failed",
     };
   }
 };
