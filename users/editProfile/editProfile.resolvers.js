@@ -3,7 +3,7 @@ import client from "../../client";
 import { protectResolver } from "../users.utils";
 const resolverFn = async (
   _,
-  { firstName, lastName, email, password: newPassword, userName },
+  { firstName, lastName, email, password: newPassword, userName, bio },
   { loggedInUser }
 ) => {
   let uglyPassword = null;
@@ -19,6 +19,7 @@ const resolverFn = async (
       lastName,
       userName,
       email,
+      bio,
       ...(uglyPassword && { password: uglyPassword }),
     },
   });
